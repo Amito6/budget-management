@@ -5,6 +5,7 @@ let t_budget = document.getElementById("total-budget");
 let product_btn = document.getElementById("product-btn");
 let title = document.getElementById("title");
 let cost = document.getElementById("cost");
+let expense_list = document.getElementById("expense-list")
 
 /* end variables area coding */
 
@@ -51,7 +52,7 @@ const all_data = () =>{
     {
         let jsonData = localStorage.getItem(all_keys);
         let json_parse = JSON.parse(jsonData);
-        alert(json_parse.p_cost);
+       
     }
    }
      t_budget.innerHTML = localStorage.getItem("Budget");
